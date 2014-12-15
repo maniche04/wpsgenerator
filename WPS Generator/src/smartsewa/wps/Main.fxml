@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
-	
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="smartsewa.wps.MainController">
-	<!-- TODO Add Nodes -->
+
+
+<AnchorPane prefHeight="272.0" prefWidth="274.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="smartsewa.wps.MainController">
+   <children>
+      <Label fx:id="thisuser" layoutX="50.0" layoutY="47.0" prefHeight="17.0" prefWidth="79.0" text="thisuser" />
+   </children>
 </AnchorPane>
