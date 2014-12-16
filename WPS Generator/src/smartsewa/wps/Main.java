@@ -1,6 +1,5 @@
 package smartsewa.wps;
 	
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import javafx.application.Application;
@@ -15,15 +14,7 @@ public class Main extends Application {
 	
 	@Override
 	public void start(Stage primaryStage) throws SQLException, ClassNotFoundException {
-		
-		ResultSet rs = sewaDB.getResult("SELECT * FROM WPSDB.sewaUsers");
-		System.out.println("Result fetched!");
-		
-		if (rs.next()) {
-			System.out.println(rs.getString("Username"));
-			System.out.println(rs.getString("Password"));
-		}
-		
+						
 		try {
 			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("Main.fxml"));
 			Scene scene = new Scene(root,400,400);
